@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en">
+        <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding:16px 16px 16px 16px;
+}
+
+main  {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-h1 {
+height: 35px;
+width: 89px;
+font-family: Plus Jakarta Sans;
+font-size: 28px;
+font-weight: 800;
+text-align: left;
+color:#13183F;
+}
+
+.header-button {
+height: 48px;
+width: 140px;
+border-radius: 28px;
+background-color: #13183F;
+color:#FFFFFF;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 700;
+
+}
+
+.buget-conteiner {
+display: flex;
+flex-direction: column;
+padding:0px 16px 0px 16px;
+gap: 25px;
+}
+
+
+.buget-h2 {
+width: 100%;
+font-family: Plus Jakarta Sans;
+font-size: 40px;
+font-weight: 800;
+color:#13183F;
+}
+
+
+.buget-p {
+width: 100%;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+color: #83869A;
+}
+
+
+.buget-button {  
+height: 56px;
+width: 167px;
+border-radius: 31.5px;
+background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 700;
+color: #FFFFFF;
+
+}
+
+
+.image-hero {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.tablet-poto {
+display: none;
+}
+
+.desktop-poto {
+display: none;
+}
+
+section {
+display: flex;
+flex-direction: column;
+padding:0px 16px 85px 16px;
+background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+padding-bottom: 85px;    
+}
+
+.header-card {
+height: 120px;
+width: 100%;
+border-radius: 10px;
+background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+margin-bottom: 16px;
+
+}
+
+
+.header-card-h2 {
+font-family: Plus Jakarta Sans;
+font-size: 24px;
+font-weight: 800;
+color: #FFFFFF;
+text-align:left;
+padding: 24px 29px 32px 28px;
+}
+
+.image-size {
+    width: 56px;
+    height: 56px;
+    border-radius: 0px;
+    margin-top:-50px;
+
+}
+
+svg {
+display: flex;
+height: 56px;
+width: 56px;
+border-radius: 0px;
+margin-top:-50px;
+
+
+}
+
+.card {
+display: flex;
+flex-direction: column;
+gap:16px;
+margin-top:40px;
+padding: 28px;
+background-color: rgba(255, 255, 255, 1);
+border-radius: 10px;
+
+
+}
+
+.card-h2 {
+height: 25px;
+width: 101px;
+font-family: Plus Jakarta Sans;
+font-size: 20px;
+font-weight: 800;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: #13183F;
+
+}
+
+.card-p {
+height: 78px;
+width: 286px;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+color: #83869A;
+}
+
+
+.card-h3 {
+height: 28px;
+width: 104px;
+font-family: Plus Jakarta Sans;
+font-size: 18px;
+font-weight: 700;
+text-align: left;
+color: #F74780;
+}
+
+
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center; 
+width: 100%;
+height: 120px;
+border-radius: 0px;
+background: #13183F;
+padding: 16px;
+
+}
+
+
+.footer-h3 {
+height: 35px;
+width: 89px;
+font-family: Plus Jakarta Sans;
+font-size: 28px;
+font-weight: 800;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: left;
+color:#FFFFFF;
+padding-left: 16px;
+}
+
+
+.footer-button {
+height: 48px;
+width: 140px;
+border-radius: 28px;
+font-family: Plus Jakarta Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0px;
+background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+color:#FFFFFF;
+
+}
+
+
+/* tablet version */
+
+
+@media screen and (min-width: 768px) {
+
+body {
+
+background-image: url("./image-hero-tablet.png");
+background-repeat: no-repeat;
+background-position:top -50px right -250px;
+background-size: 640px 640px;
+
+
+
+}
+
+header {
+margin-bottom: 100px;
+padding-left: 39px;
+padding-right: 39px;
+}
+
+
+.buget-conteiner {
+max-width: 50%;
+padding-bottom: 161px;
+padding: 39px;
+}
+
+.image-hero {
+display: none;
+}
+
+
+
+.header-card {
+height: 259px;
+width: 339px; 
+padding-top:56px;
+margin-top: 35px;
+margin-bottom: 0px;
+
+}
+
+
+section {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 11px;
+justify-content: center;
+
+}
+
+footer {
+max-width: 100%;
+margin-top: 0px;
+}
+
+}
+
+/* descktop version */
+
+@media screen and (min-width: 1440px) {
+
+    body {
+
+background-image: url(./image-hero-desktop.png);
+background-repeat: no-repeat;
+background-position:top -50px right -150px;
+background-size:910px 820px;
+
+
+
+}
+
+.desktop-buget {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+   
+
+
+header {
+padding-bottom: 100px;
+padding-left: 165px;
+padding-right: 165px;
+}
+
+
+.buget-conteiner {
+    display: flex;
+padding-left: 180px;
+padding-right: 165px;
+padding-bottom: 161px;
+
+
+}
+
+.tablet-poto {
+display: none;
+}
+
+
+
+
+section {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+max-width: 1440px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+    
+
+
+</style>
+ 
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-h1">skilled</h1>
+        <button class="header-button"> Get Started </button>
+    </header>
+
+    <main>
+<div class="descktop-buget">
+        <div class="buget-conteiner">
+            <h2 class="buget-h2">Maximize skill,
+                minimize budget</h2>
+            <p class="buget-p"> Our modern courses across a range of in-demand skills will give you the knowledge you need to live the
+                life you want.</p>
+            <button class="buget-button"> Get Started </button>
+        </div>
+</div>
+        <div class="image-hero"> 
+            <img src="image-hero-mobile.png" alt="hero">
+        </div>
+<div class="tablet-poto"> <img src="./image-hero-tablet.png" alt="tablet"> </div>
+<div> <img class="desktop-poto" src="./image-hero-desktop.png" alt="tesktop"></div>
+        <section>
+
+            <div class="header-card">
+                <h2 class="header-card-h2">
+                    Check out our most popular courses!
+                </h2>
+            </div>
+            
+            <div class="card">
+                <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><path d="M33.97 20.678c.565-.498.893-1.21.906-1.962A2.706 2.706 0 0 0 32.16 16a2.794 2.794 0 0 0-1.66.603 2.825 2.825 0 0 0-.854 1.962 2.69 2.69 0 0 0 4.325 2.113Zm-8.752.453c0 .05-.05.05-.1.1v.05a6.308 6.308 0 0 0-2.919 1.41c-.503.473-.958.995-1.358 1.559-1.006 1.408 1.358 2.766 2.315 1.358 1.257-1.762 2.816-2.264 4.527-1.71a141.96 141.96 0 0 0-2.717 5.181c-1.107 2.163-3.47 3.874-5.786 2.566a1.402 1.402 0 1 0-1.508 2.364 6.826 6.826 0 0 0 8.704-1.66c.05 0 .153.05.2.05 1.5.624 2.907 1.454 4.177 2.466.603.502 1.66 3.065 2.263 4.376a1.392 1.392 0 0 0 2.113.452c.393-.382.476-.982.202-1.456-.705-1.456-1.862-4.427-2.818-5.135a31.566 31.566 0 0 0-2.364-1.762l.1-.1a16.972 16.972 0 0 0-1.006-.605c.856-1.609 1.711-3.168 2.616-4.728 2.11.667 4.415.19 6.087-1.258.517-.46.973-.984 1.358-1.56.956-1.257-.905-2.515-2.012-1.66a.709.709 0 0 0-.153.202 4.36 4.36 0 0 1-2.013 1.66c-.05.05-.1.05-.1.1h-.051a4.146 4.146 0 0 1-3.622-.452l.101-.101h.05a.383.383 0 0 0-.201-.1 9.292 9.292 0 0 0-.956-.554 7.258 7.258 0 0 0-5.134-1.056l.005.003Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+                <h2 class="card-h2"> Animation</h2>
+                <p class="card-p"> Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+                <h3 class="card-h3"> Get Started</h3>
+                    </div>
+            
+                    <div class="card">
+                        <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FF6F48" offset="0%"/><stop stop-color="#F02AA6" offset="100%"/></linearGradient><path d="M16 0H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 16L9 8v8H2l7-8V2h7v14Z" id="b"/></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="28" cy="28" r="28"/><use fill="#FFF" xlink:href="#b" transform="translate(19 19)"/></g></svg>
+                        <h2 class="card-h2"> Design</h2>
+                        <p class="card-p">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+                        <h3 class="card-h3"> Get Started</h3>
+                            </div>
+            
+                    <div class="card">
+                        <img class="image-size" src="./icon-photography.svg" alt="Photography">
+                        <h2 class="card-h2"> Photography</h2>
+                        <p class="card-p">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+                        <h3 class="card-h3"> Get Started</h3>
+                    </div>
+            
+                    <div class="card">
+                        <img class="image-size" src="./icon-crypto.svg" alt="crypto">
+                        <h2 class="card-h2">Crypto</h2>
+                        <p class="card-p">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+                        <h3 class="card-h3"> Get Started</h3>
+                    </div>
+            
+                    <div class="card">
+                        <img class="image-size" src="./icon-business.svg" alt="business">
+                        <h2 class="card-h2"> Business</h2>
+                        <p class="card-p">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+                        <h3 class="card-h3"> Get Started</h3>
+                    </div>
+            
+
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+<h3 class="footer-h3"> skilled</h3>
+<button class="footer-button"> Get Started</button>
+    </footer>
+
+
+
+</body>
+
+</html>
